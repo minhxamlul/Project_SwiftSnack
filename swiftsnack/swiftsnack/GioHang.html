@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, intial-scale =1.0" />
+    <title>Giỏ hàng</title>
+</head>
+<body>
+    <style>
+        pre.blackbox {
+            background: none;
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+    <div class="container"
+         <table>
+             <caption>
+                 Giỏ hàng
+    <select name="mucGia" class="select-list" onchange="filter(this)" placeholder ="Mức giá"></select>
+             </caption>
+             <thead>
+                 <tr>
+                     <th>
+                         <input type="checkbox" id="chonhet" />
+                     </th>
+                     <th>Hàng hóa</th>
+                     <th>Đơn giá</th>
+                     <th>Số lượng</th>
+                     <th>Thành tiền</th>
+                 </tr>
+             </thead>
+             <tbody id="listProducts">
+                 <tr style="display: table-row;">
+                     <td>
+                         <input type="checkbox" class="chon" checked onchange="reverseAttribute(this)" />
+                     </td>
+                     <td>
+                         <img src="https://static.kfcvietnam.com.vn/images/items/lg/1-Fried-Chicken.jpg?v=0.1" />
+                         <div>1 miếng gà rán</div>
+                     </td>
+                     <td>38000</td>
+                     <td>
+                         <input type="number" value="0" class="quantity" onchange="calculateTotal(this)" />
+                     </td>
+                     <td class="thanhTien"></td>
+                 </tr>
+                 <!-- het 1 lan -->
+                 <tr style="display: table-row;">
+                     <td>
+                         <input type="checkbox" class="chon" checked onchange="reverseAttribute(this)" />
+                     </td>
+                     <td>
+                         <img src="https://static.kfcvietnam.com.vn/images/items/lg/2-Fried-Chicken.jpg?v=0.1" />
+                         <div>2 miếng gà rán</div>
+                     </td>
+                     <td>45000</td>
+                     <td>
+                         <input type="number" value="0" class="quantity" onchange="calculateTotal(this)" />
+                     </td>
+                     <td class="thanhTien"></td>
+                 </tr>
+                 <!-- het 2 lan -->
+                 <tr style="display: table-row;">
+                     <td>
+                         <input type="checkbox" class="chon" checked onchange="reverseAttribute(this)" />
+                     </td>
+                     <td>
+                         <img src="https://static.kfcvietnam.com.vn/images/items/lg/3-Fried-Chicken.jpg?v=0.1" />
+                         <div>3 miếng gà rán</div>
+                     </td>
+                     <td>60000</td>
+                     <td>
+                         <input type="number" value="0" class="quantity" onchange="calculateTotal(this)" />
+                     </td>
+                     <td class="thanhTien"></td>
+                 </tr>
+                 <!-- het 3 lan -->
+                 <tr style="display: table-row;">
+                     <td>
+                         <input type="checkbox" class="chon" checked onchange="reverseAttribute(this)" />
+                     </td>
+                     <td>
+                         <img src="https://static.kfcvietnam.com.vn/images/items/lg/3-HW.jpg?v=4ajb2g" />
+                         <div>3 cánh gà Hot Winds</div>
+                     </td>
+                     <td>60000</td>
+                     <td>
+                         <input type="number" value="0" class="quantity" onchange="calculateTotal(this)" />
+                     </td>
+                     <td class="thanhTien"></td>
+                 </tr>
+                 <!-- het 4 lan -->
+                 <tr style="display: table-row;">
+                     <td>
+                         <input type="checkbox" class="chon" checked onchange="reverseAttribute(this)" />
+                     </td>
+                     <td>
+                         <img src="https://static.kfcvietnam.com.vn/images/items/lg/5-HW.jpg?v=4ajb2g" />
+                         <div>5 cánh gà Hot Winds</div>
+                     </td>
+                     <td>120000</td>
+                     <td>
+                         <input type="number" value="0" class="quantity" onchange="calculateTotal(this)" />
+                     </td>
+                     <td class="thanhTien"></td>
+                 </tr>
+                 <!-- het 5 lan -->
+                 <tr style="display: table-row;">
+                     <td>
+                         <input type="checkbox" class="chon" checked onchange="reverseAttribute(this)" />
+                     </td>
+                     <td>
+                         <img src="https://jollibee.com.vn/media/catalog/product/cache/11f3e6435b23ab624dc55c2d3fe9479d/c/o/com_ga_chili_nc.png" />
+                         <div>1 combo cơm gà sốt cay</div>
+                     </td>
+                     <td>55000</td>
+                     <td>
+                         <input type="number" value="0" class="quantity" onchange="calculateTotal(this)" />
+                     </td>
+                     <td class="thanhTien"></td>
+                 </tr>
+                 <!-- het 6 lan -->
+                 <tr style="display: table-row;">
+                     <td>
+                         <input type="checkbox" class="chon" checked onchange="reverseAttribute(this)" />
+                     </td>
+                     <td>
+                         <img src="https://jollibee.com.vn/media/catalog/product/cache/9011257231b13517d19d9bae81fd87cc/m/y/my_lon_ga_nc.png" />
+                         <div>1 mì ý sốt bò + 1 gà rán</div>
+                     </td>
+                     <td>88000</td>
+                     <td>
+                         <input type="number" value="0" class="quantity" onchange="calculateTotal(this)" />
+                     </td>
+                     <td class="thanhTien"></td>
+                 </tr>
+                 <!-- het 7 lan -->
+                <tr>
+                    <td colspan="4" style="font-weight: bold; text-transform: uppercase">Tổng</td>
+                    <td id="tong">0</td>
+                </tr>
+             </tbody>
+         </table>
+    <div class="thanh-toan-container">
+        <input class="thanh-toan-btn" type="submit" value="Thanh toán" />
+    </div>
+    <table id="cart"> </table>
+    </div>
+
+</body>
+</html>
