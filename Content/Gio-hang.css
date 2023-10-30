@@ -1,0 +1,119 @@
+﻿﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    background-image: url(./images/background/bg1.jpg);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    padding: 10px;
+    /* background-color: #e6e6e6; */
+}
+
+th,
+td {
+    border: 1px solid #d30d0d;
+    padding: 10px;
+    text-align: center;
+}
+
+    th:first-child,
+    td:first-child {
+        width: 8%;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2),
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5) {
+        width: 20%;
+    }
+
+
+/* Quantity Input Styles */
+
+input[type="number"] {
+    width: 55%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.select_list {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    /* transition: height 1s ease; */
+}
+
+#cart {
+    display: none;
+}
+
+.thanh-toan-container {
+    text-align: center;
+}
+
+    .thanh-toan-container .thanh-toan-btn {
+        width: 20%;
+        border-radius: 15px;
+        padding: 10px;
+        background-color: #fdd425;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+        transition: all 250ms;
+        /* overflow: hidden; */
+    }
+
+        .thanh-toan-container .thanh-toan-btn:hover {
+            -webkit-transform: scale(1.05) translateZ(0);
+            -moz-transform: scale(1.05) translateZ(0);
+            transform: scale(1.05) translateZ(0);
+            transition: opacity .2s ease-in-out, transform .7s, -webkit-transform .7s, -moz-transform .7s;
+            background-color: #f6422d;
+        }
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+}

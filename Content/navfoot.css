@@ -1,0 +1,608 @@
+﻿﻿.topmenu {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    box-sizing: border-box;
+    padding: 20px 0px;
+    margin-left: -20px;
+    /* border:  1px solid red; */
+    background-color: white;
+    margin-top: -110px;
+}
+
+.topmenu > div {
+    width: 10%;
+    margin: auto;
+}
+
+    .topmenu > div:nth-child(3) {
+        width: 60px;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+
+.imgkfc {
+    width: 100%;
+    height: 25px;
+}
+
+.menuname {
+    text-align: center;
+}
+
+.imgsignin {
+    margin-left: 82%;
+}
+
+.span {
+    border-left: 0.3px solid black;
+    margin-left: 8px;
+}
+
+#divseven {
+    width: 60px;
+}
+
+.kfcbox {
+    height: 50px;
+}
+
+.div8 {
+    display: flex;
+}
+
+.ripe {
+    margin-top: 10px;
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+/* old nav bar css code  */
+/* #nav{
+             width : 100%;
+            /* border : 1px solid red ;  */
+/* height : 50px; 
+            padding-top: 20px;
+         } */
+/* .nav1{
+              float: left;
+              width : 25%;
+              margin-left: 3%;
+              /* border: 1px solid red; */
+/* padding : 25px;
+               */
+/* } 
+          .nav2{ */
+/* float: right;
+              width : 20%;
+               margin-right: 5%; 
+               /* border: 1px solid red; */
+/* padding : 25px; */
+/* } */
+.nav1 > ul {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.nav2 > ul {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+}
+
+.deals-gls {
+    text-decoration: none;
+    color: black;
+}
+
+.mid {
+    width: 100%;
+    height: 50px;
+    background-color: #202124;
+    color: white;
+    padding: 5px;
+    /* border:  1px solid green; */
+    /* margin-top: 110px; */
+    margin-left: -9px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+    .mid > h4 {
+        text-align: center;
+    }
+
+#button-start {
+    width: 200px;
+    background-color: red;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.start-gls {
+    color: white;
+    text-decoration: none;
+}
+
+.midBottom {
+    background-color: #f8f7f5;
+    width: 100%;
+    height: 100px;
+    margin-top: -23px;
+}
+
+#button {
+    margin-left: 20px;
+    padding-top: -10px;
+}
+
+#topbar {
+    /* margin-left: -400px; */
+    text-align: center;
+    margin: auto;
+}
+
+.categories {
+    max-width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+.text {
+    max-width: 40%;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 100px;
+    font-weight: bold;
+}
+
+.categories > div:nth-child(1), .categories > div:nth-child(2) {
+    display: inline-block
+}
+
+.categories > div:nth-child(2) {
+    width: 60%;
+    float: right;
+    height: 20px;
+    margin-top: 120px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 220px 220px;
+    grid-gap: 2%;
+    row-gap: 70px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+    #container > div {
+        border-radius: 10px;
+        background-color: #f8f7f5;
+        height: 260px;
+    }
+/* #container>div:nth-child(8){
+           grid-column-start: 3;
+           grid-column-end: 5;
+       }  */
+.boxtext {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.Image {
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#G {
+    width: 50%;
+    height: 70%;
+    margin: auto;
+    margin-top: 30px;
+    background-image: url("https://online.kfc.co.in/static/media/finger_lickin.fc21c805.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#bottom {
+    max-width: 100%;
+    height: 600px;
+    background-color: #202124;
+    color: white;
+    margin-top: 80px;
+}
+
+.offer {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+
+.carousel1 > div:nth-child(1) {
+    margin-left: 100px;
+}
+
+.carousel-cell1 {
+    width: 28%;
+    height: 400px;
+    margin-right: 100px;
+    background: #f8f7f5;
+    border-radius: 5px;
+    text-align: center;
+    /* counter-increment: carousel-cell1; */
+}
+
+    .carousel-cell1:before {
+        display: block;
+        text-align: center;
+        /* content: counter(carousel-cell1); */
+        line-height: 10px;
+        font-size: 80px;
+        color: white;
+    }
+/* * { box-sizing: border-box; } */
+
+body {
+    font-family: sans-serif;
+}
+
+.carousel1 {
+    background: #202124;
+}
+
+.image2 {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.Text {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 2px;
+}
+
+.Text1 {
+    color: black;
+}
+
+.copun {
+    width: 100%;
+    display: flex;
+    justify-content: space-around
+}
+
+.redeem {
+    border-radius: 30px;
+    width: 150px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+.hrf {
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.Imagelast {
+    height: 100px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.boxtextmenu {
+    margin-top: 70px;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.line > hr {
+    margin-left: -60px;
+    margin-top: 15px;
+    color: #e3e3e3;
+    border-top: 2px solid;
+}
+
+/* footer styles */
+.container {
+    max-width: 60%;
+    background-color: #202124;
+    margin-left: 5%;
+    display: flex;
+    height: 220px;
+}
+
+.kfc-logo {
+    max-width: 10%;
+    margin-left: 7%;
+    margin-top: 1%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #202124;
+    padding: 70px 0;
+    display: flex;
+    margin-left: -0.5%;
+    width: 100%;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 px;
+}
+
+    .footer-col h4 {
+        font-size: 14px;
+        color: white;
+        text-transform: capitalize;
+        margin-bottom: -10px;
+        font-weight: 500;
+        position: relative;
+        padding-left: 40px;
+    }
+
+        .footer-col h4 ::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            background-color: orange;
+            height: 2px;
+            box-sizing: border-box;
+            width: px;
+        }
+
+    .footer-col ul li:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 13px;
+        /* text-transform: capitalize; */
+        text-decoration: none;
+        font-weight: 300;
+        color: rgb(255, 255, 255);
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+        .footer-col ul li a:hover {
+            color: rgb(255, 242, 218);
+            padding-left: 8px;
+        }
+
+.playstore {
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.appstore {
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.foot-col-sol .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+    .foot-col-sol .social-links a:hover {
+        color: grey;
+        background-color: rgb(255, 255, 255);
+    }
+
+.foot-col-sol {
+    background-color: #202124;
+    /* border: 1px solid red; */
+    margin-top: -25px;
+    width: 101%;
+    margin-left: -0.5%;
+}
+
+.social-links {
+    margin-left: 85%;
+}
+
+.fa-solid {
+    color: red;
+}
+
+.footer-col > #underline a {
+    text-decoration: underline;
+}
+/* welcome page css starts */
+#welcomePage {
+    background-color: #f8f7f5;
+    height: 140px;
+    width: 100%;
+}
+
+    #welcomePage > img {
+        margin-left: 12%;
+        height: 18%;
+    }
+
+    #welcomePage > h2 {
+        margin-left: 12%;
+        font-weight: 700;
+        font-size: 44px;
+        margin-top: 13px;
+        font-family: 'David Libre', serif;
+        font-family: 'Oswald', sans-serif;
+        color: black;
+    }
+/* welcome page css completed */
+
+/* offers and deals css starts */
+.img_box {
+    height: 420px;
+    width: 315px;
+    /* border: 1px solid black; */
+    background-color: white;
+    /* margin-top: 100px; */
+    border-radius: 10px;
+}
+
+    .img_box > img {
+        height: 61%;
+        width: 100%;
+        max-width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+.slider_container .container-offer {
+    padding: 0 15px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+
+.card_slider {
+    padding: 50px 0;
+}
+
+.main-offer-container {
+    height: 600px;
+    width: 101%;
+    background-color: #202124;
+    margin-left: -0.5%;
+    /* margin-top: 100px; */
+}
+
+.rdmBtn {
+    height: 42px;
+    width: 120px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    margin-left: 60px;
+    font-weight: 500;
+    cursor: pointer;
+    color: black;
+    font-size: 14px;
+}
+
+    .rdmBtn:hover {
+        background-color: black;
+        color: white;
+    }
+
+img + h4 {
+    color: #e4002b;
+    text-align: center;
+    font-size: 28px;
+    padding-top: 10px;
+    margin-top: -3px;
+    font-weight: bolder;
+}
+
+.viewD {
+    color: #666565;
+    font-size: 14px;
+    align-items: bottom;
+    font-weight: 700;
+    margin-left: 25px;
+    text-decoration: none;
+}
+
+    .viewD:hover {
+        background-color: rgb(218, 218, 218);
+        height: 40px;
+    }
+
+.text-gap {
+    text-align: center;
+    padding-left: 15px;
+    font-weight: 600;
+    color: #525252;
+    margin-top: -15px;
+    padding-right: 15px;
+    font-size: 13px;
+}
+
+#viewdeals {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    margin-top: 13px;
+}
+
+#dealsContainer {
+    height: 100px;
+    width: 101%;
+    margin-top: 100px;
+    background-color: #202124;
+    margin-bottom: -100px;
+    margin-left: 0.5%;
+    padding-left: 0.5%;
+}
+
+#p {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 32px;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+h4 + p {
+    color: black;
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+#arrowFlex {
+    display: flex;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 15px;
+    font-family: 'David Libre', serif;
+}
+
+.fa-solid {
+    margin-top: 18px;
+    margin-left: 10px;
+}
+
+#spaceBet {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}

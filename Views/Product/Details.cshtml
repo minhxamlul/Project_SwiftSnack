@@ -1,0 +1,104 @@
+﻿
+@{
+    ViewBag.Title = "Chi tiết";
+    Layout = "~/Views/Shared/_HomeLayout.cshtml" ;
+
+}
+
+<h2>Chi tiết sản phẩm KFC</h2>
+
+<div class="product-details">
+    <div class="product-image">
+        <img src="@Url.Content(Model.ImagePro)" height="300" width="300" />
+    </div>
+
+    <div class="product-info">
+        <h1>@Model.NamePro</h1>
+        <p>@Model.DecriptionPro</p>
+
+        <div class="product-price">
+            <span>Giá:</span>
+            @Model.Price
+        </div>
+
+        <div class="product-actions">
+            <a href="/cart/add/@Model.ProductID">Thêm vào giỏ hàng</a>
+            <a href="#">Mua ngay</a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+    .product-details {
+        width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Roboto, sans-serif;
+    }
+
+    .product-image {
+        float: left;
+        margin-right: 20px;
+        width: 300px;
+        position: relative;
+    }
+
+        .product-image img {
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+    .product-info {
+        float: left;
+        width: 600px;
+        padding-left: 20px;
+    }
+
+        .product-info h1 {
+            font-size: 28px;
+            margin: 0 0 10px;
+            font-family: Lato, serif;
+        }
+
+        .product-info p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 0 0 10px;
+        }
+
+    .product-price {
+        font-size: 18px;
+        margin: 0 0 10px;
+        color: #808080;
+    }
+
+    .product-actions {
+        margin-top: 20px;
+    }
+
+        .product-actions a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #808080;
+            margin-right: 10px;
+            border: 1px solid #808080;
+        }
+
+    .product-details h2 {
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0;
+        font-family: Lato, serif;
+    }
+    
+</style>
+
+
+

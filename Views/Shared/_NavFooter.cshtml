@@ -1,0 +1,154 @@
+﻿﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://t3.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://online.kfc.co.in/&size=16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- welcome page script -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Oswald:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dummy.css">
+    <title>KFC | Order KFC Chiken Online & Find Restaurants</title>
+    <link rel="stylesheet" href="~/Content/navfoot.css" />
+
+</head>
+<body>
+    <header>
+        <div class="topmenu">
+            <div></div>
+            <div>
+                <a href="index.html"><img class="imgkfc" src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg" alt=""></a>
+            </div>
+            <div class="div3"><h4 class="menuname"><a class="deals-gls" href="menu.html">MENU</a></h4></div>
+            <div><h4><a class="deals-gls" href="deals.html">DEALS</a></h4></div>
+            <div><h4><a class="deals-gls" href="deals.html">BOOK A PARTY</a></h4></div>
+            <div><h4><a class="deals-gls" href="deals.html">FIND A KFC</a></h4></div>
+            <div></div>
+
+            <div><img class="imgsignin" src="https://images.ctfassets.net/wtodlh47qxpt/6bJdGLRkksNvWP4LI9ZiFF/cb89d6393492fd093e0f99980abfa39e/Account_Icon.svg" alt=""></div>
+            <div id="divseven"><h4 class="signin"><a class="deals-gls" href="~/Views/Home/LoginPage.cshtml">Sign in</a><span class="span"></span></h4></div>
+            <div class="div8"><div class="ripe">₹0</div><img class="kfcbox" src="https://images.ctfassets.net/wtodlh47qxpt/6qtBVFuno7pdwOQ9RIvYm9/d13e9b7242980972cf49beddde2cc295/bucket_cart_icon.svg" alt=""></div>
+        </div>
+        <div class="mid">
+            <h4 id="topbar">LET'S ORDER FOR DELIVERY, PICK UP, OR DINE-IN <span><button id="button-start"><a class="start-gls" href="#">start order</a></button></span> </h4>
+        </div>
+        <!-- there should be some other div here for the sliding images and "welcome to KFC" -->
+        <div class="main-carousel">
+            <div class="cell"><img src="https://images.ctfassets.net/wtodlh47qxpt/bwwtSv4zmZZm42c5wSg8Z/e24fc963e2fe768d2bf36bc1c200f7ae/Matchday_Banner_1440x396px_A.jpg" alt="first slide"></div>
+            <div class="cell"><img src="https://images.ctfassets.net/wtodlh47qxpt/6C7plVV6khmYCotBjkMbpX/1871bd3bc4f6b4ef704564f47bf2cffe/KFC_600_Bucket_KV_Digital_desktop.png" alt="second slide"></div>
+            <div class="cell"><img src="https://images.ctfassets.net/wtodlh47qxpt/4w2NU51eNqAlF0S4k3YLTB/0872e046c202005f49e6c94489c8ce40/4Value_Burger_1440x396px.png" alt="3rd slide"></div>
+        </div>
+
+    </header>
+    <div>@RenderBody()</div>
+    <footer>
+
+        <div class="footer">
+            <div class="kfc-logo">
+                <a href="index.html"><img src="https://images.ctfassets.net/wtodlh47qxpt/25FSYFuEtGct8NSrtpKe6d/b602f6fe0bf294e6a6dff5d7648bf594/KFC_Logo.svg" alt="kfc-footer-img"></a>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>KFC Food</h4>
+                        <ul>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="#">Order Lookup</a></li>
+                            <li><a href="giftcard.html">Gift Card</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="help.html">Get Help</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">KFC Feedback</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="disclaimer.html">Disclaimer</a></li>
+                            <li><a href="cautionNotice.html">Caution Notice</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>KFC India</h4>
+                        <ul>
+                            <li><a href="aboutkfc.html">About KFC</a></li>
+                            <li><a href="#">KFC care</a></li>
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="#">Our Golden Past</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <!-- <span><i class="fa-solid fa-location-dot"></i>KFC</span> -->
+                        <ul id="underline">
+                            <li><a href="#"><i class="fa-solid fa-location-dot"></i>Find a KFC</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="playstore">
+                <a href="https://play.google.com/store/apps/details?id=com.yum.kfc" target="_blank"><img src="https://images.ctfassets.net/wtodlh47qxpt/6BdZsyjLn64c06uCIE73d1/fb530f5d5231533b049463f6c7e8a2b1/google_play.svg" alt="playstore"></a>
+            </div>
+            <div class="appstore">
+                <a href="https://apps.apple.com/in/app/kfc-india/id915824379" target="_blank"> <img src="https://images.ctfassets.net/wtodlh47qxpt/em3mcMuAdXWlgucSJiTbS/d3ae7e51ed101d829e459355e255c47f/apple.svg" alt="appstore"></a>
+            </div>
+        </div>
+        <div class="foot-col-sol">
+            <div class="copyright">
+            </div>
+            <div class="social-links">
+                <a href="https://www.instagram.com/kfcindia_official/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/KFCIndia" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/KFC_India" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    var swiper = new Swiper(".card_slider", {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+        speed: 1000,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+
+    });
+</script>
+</body>
+</html>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script type="text/javascript">
+    $('.main-carousel').flickity({
+        // options
+        cellAlign: 'left',
+        wrapAround: true,
+        freeScroll: true,
+        // contain: true,
+    });
+</script>
+<script src="dummy.js"></script>
